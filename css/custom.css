@@ -1,0 +1,262 @@
+/*==============
+  DEFAULT CSS
+================*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+
+@font-face {
+  font-family:impact;
+  src: url("fonts/impact.oet");
+  src: url("fonts/impact.otf");
+  src: url("fonts/impact.ttf");
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, p {
+    margin:0;
+    padding: 0;
+}
+
+
+
+/*===================
+  Header Section
+=======================*/
+.header-section {
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.header-section .row {
+    min-height: 100vh;
+}
+.navbar {
+    padding:0;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 40px 18px 22px;
+    border-bottom: 10px solid transparent;
+    transition: all 0.4s ease-in-out;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color:#fff;
+    font-weight: 500;
+    background:#22454e;
+    border-bottom:10px solid #40afcc;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color:#fff;
+    font-weight: 500;
+    background:#22454e;
+    border-bottom:10px solid #40afcc;
+}
+
+.banner-content {
+    text-align: center;
+}
+.banner-content h1 {
+    color: #40afcc;
+    font-size: 65px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.banner-content h1 span {
+    color: #f7f7f7;
+    font-weight: 100;
+    text-transform: none;
+}
+.banner-content p {
+    font-size: 20px;
+    font-weight: 100;
+    color:#f7f7f7;
+    padding:35px 0 60px;
+    max-width: 515px;
+    margin:auto;   
+}
+.banner-content ul li {
+    margin:0 10px;
+}
+.banner-content ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #f7f7f7;
+    padding:20px 35px;
+    border:2px solid #40afcc;
+    transition: all 0.4s ease-in-out;
+}
+.banner-content ul li a.download {
+    border-bottom-left-radius: 30px;
+}
+.banner-content ul li a.portfolio {
+    border-bottom-right-radius: 30px;
+}
+.banner-content ul li a.download:hover {
+    background:#40afcc;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius: 30px;
+}
+.banner-content ul li a.portfolio:hover {
+    background:#40afcc;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:30px;
+}
+.social-icons {
+    position: absolute;
+    top:50%;
+    right:20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+.social-icons ul {}
+.social-icons ul li {
+    list-style: none;
+    margin:10px 0px;
+}
+.social-icons ul li.follow-me {
+    color: #f7f7f7;
+    transform: rotate(-90deg) translate(-30px, -23px);
+    -webkit-transform: rotate(-90deg) translate(-30px, -23px);
+    -moz-transform: rotate(-90deg) translate(-30px, -23px);
+}
+.social-icons ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background:#f7f7f7;
+    color: #929292;
+    border-radius: 180px;
+    transition: all 0.4s ease-in-out;
+}
+.social-icons ul li a:hover {
+    background:#40afcc;
+    color:#fff;
+}
+
+
+/*===================
+  About Us Section
+=======================*/
+.about-us {
+    padding:110px 0px;
+}
+.heading {
+    padding-top: 30px;
+}
+.heading h1 {
+    font-weight: 900;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #40afcc;
+    position: relative;
+    padding-bottom: 58px;
+    text-align: center;
+    max-width: 500px;
+}
+.heading h1 span {
+    color: #f7f7f7;
+    font-size: 125px;
+    position: absolute;
+    font-family:impact;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.about-content {
+    padding-top:40px;
+}
+.about-content p {
+    max-width: 600px;
+    color: #242424;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+.about-content p.para-2 {
+    padding: 25px 0;
+}
+
+
+/*===================
+  Skill Section
+=======================*/
+.skill-section {
+    padding-bottom: 110px;
+}
+.skill-heading {}
+.skill-heading h1 {
+    max-width: 100%;
+    padding-bottom: 34px;
+}
+.skill-heading h1 span {
+    font-family:impact;
+    font-size: 100px;
+    width: 100%;
+}
+.skill-title {
+    padding: 60px 0px 40px;
+}
+.skill-title h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    color: #40afcc;
+}
+.skill-content-section {
+    position: relative;
+}
+.skill-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    opacity:0;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+}
+.skill-content p {
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff; 
+    padding:42px 0px;
+    font-weight:700;
+}
+.skill-content-section:hover .skill-content {
+    opacity:0.8;
+    transform: scale(1);
+}
+.back-end-content {
+    background: #fcdb01;
+}
+.back-end-content p {
+    color: #000;
+}
+.digital-content {
+    background:#333;
+}
+.digital-content p {
+    padding: 60px 0px;
+}
+.graphic-content {
+    background: #9b00ff;
+}
+
+
+
+
+
+
+
